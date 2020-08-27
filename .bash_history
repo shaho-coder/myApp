@@ -41,3 +41,20 @@ desktop/myApp
 git add .
 git status
 git commit
+git init
+git add.
+git add .
+rd git /S/Q
+git init
+git add.
+git add .
+git commit -m"my first commit"
+git init
+git add .
+git add --ignore-removal
+git add .
+git status
+sudo apt-install git
+sudo apt-get install git
+git init
+git commit
