@@ -1,0 +1,411 @@
+WEBVTT
+
+00:00:01.980 --> 00:00:04.330
+I just said that at its core, Git is a
+
+00:00:04.330 --> 00:00:06.690
+map. That means that it's a table with
+
+00:00:06.700 --> 00:00:09.355
+keys and values. What are the keys, and
+
+00:00:09.355 --> 00:00:11.050
+what are the values? Well, the values are
+
+00:00:11.050 --> 00:00:13.530
+just sequences of bytes. For example, the
+
+00:00:13.530 --> 00:00:16.132
+content of a text file or even a binary
+
+00:00:16.132 --> 00:00:18.970
+file. Any sequence of bytes can be a
+
+00:00:18.970 --> 00:00:21.590
+value. You can give a value to Git, and it
+
+00:00:21.590 --> 00:00:24.650
+will calculate a key for it, a hash. Git
+
+00:00:25.590 --> 00:00:27.740
+calculates hashes with the "Shawn"
+
+00:00:27.740 --> 00:00:30.900
+algorithm. It's S‑H‑A‑1, "Shawn" for
+
+00:00:30.900 --> 00:00:34.040
+friends. Every piece of content has its
+
+00:00:34.040 --> 00:00:36.820
+own SHA‑1. For example, let's take a piece
+
+00:00:36.820 --> 00:00:39.510
+of content, the string "Apple Pie." If you
+
+00:00:39.760 --> 00:00:41.970
+ask Git to generate a SHA‑1 out of this
+
+00:00:41.970 --> 00:00:44.930
+string, then you will get this hash,
+
+00:00:44.930 --> 00:00:46.950
+exactly this one. There is only one hash
+
+00:00:46.950 --> 00:00:50.445
+for this string. SHA‑1s are 20 bytes in
+
+00:00:50.445 --> 00:00:52.830
+hexadecimal format, so they are a sequence
+
+00:00:52.830 --> 00:00:57.330
+of 40 hex digits. This will be Git's key
+
+00:00:57.350 --> 00:01:00.700
+to store this content in the map. We can
+
+00:01:00.700 --> 00:01:02.680
+also calculate the SHA‑1 on the command
+
+00:01:02.680 --> 00:01:05.340
+line. To do this, we need a command that
+
+00:01:05.340 --> 00:01:07.510
+you might never have heard about because
+
+00:01:07.510 --> 00:01:09.950
+it's a low‑level plumbing command, git
+
+00:01:09.960 --> 00:01:13.310
+hash‑object. So let's pass our piece of
+
+00:01:13.320 --> 00:01:16.160
+content to hash‑object. I wish I could do
+
+00:01:16.300 --> 00:01:18.860
+it like this. It would be easy, but I
+
+00:01:18.860 --> 00:01:21.770
+can't. Hash‑object is not very user
+
+00:01:21.770 --> 00:01:24.940
+friendly. It's a plumbing command. So if
+
+00:01:24.940 --> 00:01:27.120
+you do what I just did, Git will think
+
+00:01:27.120 --> 00:01:28.990
+that "Apple Pie" is the name of a file.
+
+00:01:30.040 --> 00:01:33.080
+Instead, I can use the echo command to
+
+00:01:33.080 --> 00:01:36.060
+output this content and then pipe the
+
+00:01:36.060 --> 00:01:40.730
+result into hash‑object like this. I also
+
+00:01:40.730 --> 00:01:42.660
+need to tell hash‑object to get its
+
+00:01:42.660 --> 00:01:46.230
+content from standard input, not very
+
+00:01:46.230 --> 00:01:48.930
+intuitive. If you're using Windows, then
+
+00:01:48.930 --> 00:01:51.580
+you will use different shell commands. But
+
+00:01:51.580 --> 00:01:53.540
+don't worry about doing this yourself
+
+00:01:53.540 --> 00:01:55.730
+anyhow. It's enough that you understand
+
+00:01:55.730 --> 00:01:58.710
+what this does. It brings out the hash for
+
+00:01:58.710 --> 00:02:02.530
+this piece of content, and here is the
+
+00:02:02.530 --> 00:02:05.290
+result. This is the SHA‑1 for the string
+
+00:02:05.290 --> 00:02:08.520
+"Apple Pie." This is the same SHA‑1 I
+
+00:02:08.520 --> 00:02:10.669
+showed you on the previous slide. We have
+
+00:02:10.669 --> 00:02:12.460
+the same content, so we get the same
+
+00:02:12.460 --> 00:02:15.390
+SHA‑1. If you change anything in the
+
+00:02:15.390 --> 00:02:17.990
+content, a single letter for example, I
+
+00:02:17.990 --> 00:02:20.315
+will add a new line character at the end
+
+00:02:20.315 --> 00:02:22.720
+like this, then you get a completely
+
+00:02:22.720 --> 00:02:27.170
+different SHA‑1. Every object in a Git
+
+00:02:27.170 --> 00:02:29.510
+repository has a SHA‑1. If you put the
+
+00:02:29.510 --> 00:02:31.990
+string "Apple Pie" in the file and store
+
+00:02:31.990 --> 00:02:34.360
+this file in Git, then the SHA‑1 we just
+
+00:02:34.360 --> 00:02:38.090
+generated will identify the file. And as
+
+00:02:38.090 --> 00:02:40.560
+we'll see later, directories also have
+
+00:02:40.750 --> 00:02:42.565
+their own SHA‑1, as do commits, and so on.
+
+00:02:44.440 --> 00:02:46.680
+With so many SHA‑1s around, you might
+
+00:02:46.680 --> 00:02:50.220
+wonder what happens if they collide? After
+
+00:02:50.220 --> 00:02:52.470
+all, the number of possible SHA‑1s is‑it's
+
+00:02:52.470 --> 00:02:55.360
+large, sure, but it's not infinite. What
+
+00:02:55.360 --> 00:02:57.640
+if I have two different pieces of content
+
+00:02:57.640 --> 00:02:59.990
+and just by chance they happen to have the
+
+00:02:59.990 --> 00:03:03.120
+same SHA‑1. Wouldn't that make a mess of
+
+00:03:03.120 --> 00:03:05.650
+my project and cause me to lose my data?
+
+00:03:06.540 --> 00:03:10.680
+Well, yes, it would, but it's unlikely to
+
+00:03:10.680 --> 00:03:13.760
+happen. Let's see just how unlikely it is,
+
+00:03:13.770 --> 00:03:16.490
+just because it's fun. Think of the US
+
+00:03:16.490 --> 00:03:19.390
+Powerball lottery. How many chances do you
+
+00:03:19.390 --> 00:03:21.080
+have of winning the lottery jackpot?
+
+00:03:23.140 --> 00:03:24.890
+Google tells me that the chances that a
+
+00:03:24.900 --> 00:03:26.980
+particular combination of numbers wins the
+
+00:03:26.980 --> 00:03:32.730
+jackpot are about 1 in 175 million. This
+
+00:03:32.730 --> 00:03:34.630
+is a large number, so let's try to
+
+00:03:34.630 --> 00:03:38.010
+visualize it. Imagine printing one ticket
+
+00:03:38.010 --> 00:03:40.160
+for every possible combination of numbers
+
+00:03:40.160 --> 00:03:43.640
+in the lottery. You get 175 million
+
+00:03:43.650 --> 00:03:46.710
+tickets. Now imagine putting all those
+
+00:03:46.710 --> 00:03:49.650
+tickets in a line, 1 every 25 centimeters.
+
+00:03:50.140 --> 00:03:53.690
+That's about 10 inches. That's a very long
+
+00:03:53.690 --> 00:03:56.350
+line of tickets, long enough to span the
+
+00:03:56.350 --> 00:03:59.330
+entire equator. Now imagine starting
+
+00:03:59.340 --> 00:04:01.270
+somewhere on the equator and taking a walk
+
+00:04:01.270 --> 00:04:04.120
+around the world. It's a long walk and
+
+00:04:04.120 --> 00:04:06.098
+also quite a bit of swimming, so it's
+
+00:04:06.098 --> 00:04:08.170
+going to take a while. And all across your
+
+00:04:08.170 --> 00:04:10.480
+track, you're walking along this very long
+
+00:04:10.480 --> 00:04:13.080
+line on lottery tickets, remember. And
+
+00:04:13.080 --> 00:04:15.870
+just once during your trip you're allowed
+
+00:04:15.870 --> 00:04:18.579
+to pick up a single ticket. And if you are
+
+00:04:18.579 --> 00:04:21.110
+really lucky, that's the one ticket that
+
+00:04:21.110 --> 00:04:24.370
+wins the jackpot. Congratulations. That's
+
+00:04:24.370 --> 00:04:28.320
+how hard it is to win the jackpot. Now
+
+00:04:28.320 --> 00:04:30.040
+imagine that you enjoyed winning the
+
+00:04:30.040 --> 00:04:32.540
+jackpot, so you want to try it again. You
+
+00:04:32.540 --> 00:04:34.435
+take a second trip around the world. You
+
+00:04:34.435 --> 00:04:36.000
+once again pick up a single ticket along
+
+00:04:36.220 --> 00:04:38.760
+your way, and you win again. Now that's
+
+00:04:38.930 --> 00:04:41.290
+really, really good luck. Winning the
+
+00:04:41.290 --> 00:04:43.300
+jackpot twice in a row is almost
+
+00:04:44.025 --> 00:04:46.730
+miraculous, matter of fact. Now imagine
+
+00:04:46.730 --> 00:04:49.370
+doing it a third time, and amazingly you
+
+00:04:49.370 --> 00:04:53.740
+win again. And again and again, six times
+
+00:04:53.750 --> 00:04:56.170
+in a row. Now winning the jackpot six
+
+00:04:56.170 --> 00:04:58.560
+times in a row is extremely unlikely, you
+
+00:04:58.560 --> 00:05:02.370
+will agree. Well, going back to Git, these
+
+00:05:02.370 --> 00:05:04.480
+are about the same chances of getting the
+
+00:05:04.480 --> 00:05:06.990
+same SHA‑1 for two different pieces of
+
+00:05:06.990 --> 00:05:10.880
+content. It's just not likely to ever
+
+00:05:10.880 --> 00:05:15.470
+happen to you or to anybody by chance. So
+
+00:05:15.470 --> 00:05:18.090
+by all practical purposes, SHA1‑s are
+
+00:05:18.550 --> 00:05:20.450
+unique. Not just the unique in your
+
+00:05:20.450 --> 00:05:22.640
+project, you can think of them as if they
+
+00:05:22.640 --> 00:05:24.880
+were unique in the universe. You could put
+
+00:05:25.080 --> 00:05:27.280
+all of the data you will ever write in
+
+00:05:27.280 --> 00:05:29.760
+your life in the same Git repository, and
+
+00:05:29.760 --> 00:05:31.700
+Git would assign a different SHA‑1 to each
+
+00:05:31.700 --> 00:05:33.650
+version of each file in each folder.
+
+00:05:34.140 --> 00:05:36.880
+That's a lot of data. You might get some
+
+00:05:36.880 --> 00:05:39.630
+performance problems, but still no
+
+00:05:39.640 --> 00:05:43.470
+collisions. Later in this training when we
+
+00:05:43.470 --> 00:05:45.300
+talk about distribution, this piece of
+
+00:05:45.300 --> 00:05:47.990
+information will come useful. For now, I'm
+
+00:05:47.990 --> 00:05:50.580
+only mentioning it to say: if you have
+
+00:05:50.580 --> 00:05:53.275
+ever worried that two SHA‑1s might collide
+
+00:05:53.275 --> 00:05:56.040
+in your Git project, then stop worrying
+
+00:05:56.040 --> 00:05:56.450
+now.
+�J��T�           _=yB��       �    :https://app.pluralsight.com/transcript/api/v1/caption/webvtt/5326515f-7c84-4c87-afa6-e8a3b91aa93b/f5619d96-6230-433e-a17c-b69a5db667d4/en/ strongly-framed 1 security-info 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 request-method GET response-head HTTP/2.0 200 OK
+date: Wed, 19 Aug 2020 19:10:03 GMT
+content-type: text/vtt; charset=utf-8
+content-length: 9142
+vary: Origin
+x-response-time-ms: 18
+x-correlation-id: 7684e07a-8385-434b-82a7-df2120f9fd4c
+cf-cache-status: DYNAMIC
+cf-request-id: 04a9b9e97200007d39b93e8200000001
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+server: cloudflare
+cf-ray: 5c562c2259fc7d39-EVN
+X-Firefox-Spdy: h2
+ original-response-headers date: Wed, 19 Aug 2020 19:10:03 GMT
+content-type: text/vtt; charset=utf-8
+content-length: 9142
+vary: Origin
+x-response-time-ms: 18
+x-correlation-id: 7684e07a-8385-434b-82a7-df2120f9fd4c
+cf-cache-status: DYNAMIC
+cf-request-id: 04a9b9e97200007d39b93e8200000001
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+server: cloudflare
+cf-ray: 5c562c2259fc7d39-EVN
+X-Firefox-Spdy: h2
+   #�

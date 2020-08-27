@@ -1,0 +1,21 @@
+logrotate state -- version 2
+"/home/shaho/.cache/upstart/unity-panel-service-lockscreen.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/indicator-session.log" 2020-8-19-14:25:12
+"/home/shaho/.cache/upstart/hud.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/im-config.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/upstart-event-bridge.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/gnome-keyring-ssh.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/unity7.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/update-notifier-release.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/unity-panel-service.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/unity-settings-daemon.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/indicator-printers.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/dbus.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/ssh-agent.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/update-notifier-crash-_var_crash__usr_sbin_unity-greeter.112.crash.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/at-spi2-registryd.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/gnome-session-Unity.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/indicator-application.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/gnome-keyring-gpg.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/indicator-sound.log" 2020-8-27-2:34:33
+"/home/shaho/.cache/upstart/window-stack-bridge.log" 2020-8-27-2:34:33

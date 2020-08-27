@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///media/shaho/A6187D17187CE7A7/_Solvettube.com_Pro_Evolution_Soccer_UEFA_Euro_2016_France.mp4" added="2020-08-15T11:58:00Z" modified="2020-08-15T11:58:01Z" visited="2020-08-15T11:58:00Z">
+    <title>_Solvettube.com_Pro_Evolution_Soccer_UEFA_Euro_2016_France.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;totem %U&apos;" modified="2020-08-15T11:58:00Z" count="1"/>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2020-08-15T11:58:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/shaho/Downloads/git-2.28.0.tar.gz" added="2020-08-19T19:16:22Z" modified="2020-08-19T19:20:28Z" visited="2020-08-19T19:16:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;/usr/lib/gvfs/gvfsd-archive file=%u&apos;" modified="2020-08-19T19:16:42Z" count="2"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2020-08-19T19:20:28Z" count="4"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-08-19T19:20:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/shaho/Downloads/git-2.28.0.tar.gz.part" added="2020-08-19T19:17:21Z" modified="2020-08-19T19:17:21Z" visited="2020-08-19T19:17:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/gzip"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;file-roller %U&apos;" modified="2020-08-19T19:17:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/shaho/Desktop/shaho-123" added="2020-08-19T19:20:54Z" modified="2020-08-19T19:20:54Z" visited="2020-08-19T19:20:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Archive Manager" exec="&apos;file-roller %u&apos;" modified="2020-08-19T19:20:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/shaho/Documents/Untitled%201" added="2020-08-27T06:53:11Z" modified="2020-08-27T06:53:11Z" visited="2020-08-27T06:53:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.2" exec="&apos;soffice %u&apos;" modified="2020-08-27T06:53:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/shaho/Documents/Untitled%201.odt" added="2020-08-27T06:53:12Z" modified="2020-08-27T07:40:45Z" visited="2020-08-27T06:53:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.2" exec="&apos;soffice %u&apos;" modified="2020-08-27T07:40:45Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/shaho/Downloads/84979873_487869848812315_3108078531431628800_o.jpg" added="2020-08-27T07:36:32Z" modified="2020-08-27T07:37:09Z" visited="2020-08-27T07:36:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-08-27T07:37:09Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

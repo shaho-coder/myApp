@@ -1,0 +1,42 @@
+
+** (process:2157): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2157): WARNING **:     A trash files/ directory should only have files linked or unlinked (via moves or deletes).  Some other operation has been detected on a file in the directory (eg: a file has been modified).  Likely, the data reported by the trash backend will now be inconsistent.
+
+** (process:2157): WARNING **:   dir: /media/shaho/A6187D17187CE7A7/.Trash-1000/files, file: System Volume Information, type: 1
+
+
+Activating service name='org.freedesktop.PackageKit'
+INFO:Starting service
+Successfully activated service 'org.freedesktop.PackageKit'
+DEBUG:Checking for inactivity (30s)
+DEBUG:Checking for inactivity (60s)
+DEBUG:Checking for inactivity (90s)
+DEBUG:Checking for inactivity (120s)
+DEBUG:Checking for inactivity (150s)
+DEBUG:Checking for inactivity (180s)
+INFO:Shutting down because of inactivity
+Activating service name='org.freedesktop.PackageKit'
+INFO:Starting service
+Successfully activated service 'org.freedesktop.PackageKit'
+DEBUG:Checking for inactivity (30s)
+DEBUG:Checking for inactivity (60s)
+DEBUG:Checking for inactivity (90s)
+DEBUG:Checking for inactivity (120s)
+DEBUG:Checking for inactivity (150s)
+DEBUG:Checking for inactivity (180s)
+INFO:Shutting down because of inactivity
+module-cache-reaper-Message: Reaping abandoned data directories
+module-cache-reaper-Message: Reaping abandoned cache directories
+
+** (process:2157): WARNING **: send_done_cb: No such interface 'org.gtk.vfs.Enumerator' on object at path /org/gtk/vfs/client/enumerator/2 (g-dbus-error-quark, 19)
+
+
+** (process:2157): WARNING **: send_done_cb: No such interface 'org.gtk.vfs.Enumerator' on object at path /org/gtk/vfs/client/enumerator/3 (g-dbus-error-quark, 19)
+
+
+** (notify-osd:2047): WARNING **: dnd_is_screensaver_active(): Got error "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken."
+
+
+** (notify-osd:2047): WARNING **: dnd_is_screensaver_active(): Got error "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken."
+

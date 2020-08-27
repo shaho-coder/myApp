@@ -1,0 +1,50 @@
+1598510487305	Sync.Service	INFO	Loading Weave 1.68.0
+1598510487307	Sync.Engine.Clients	DEBUG	Engine constructed
+1598510487308	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1598510487353	Sync.Engine.Addons	DEBUG	Engine constructed
+1598510487388	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1598510487391	Sync.AddonsReconciler	DEBUG	No data seen in loaded file: addonsreconciler
+1598510487394	Sync.Engine.Forms	DEBUG	Engine constructed
+1598510487395	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1598510487398	Sync.Engine.History	DEBUG	Engine constructed
+1598510487399	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1598510487402	Sync.Engine.Passwords	DEBUG	Engine constructed
+1598510487403	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1598510487407	Sync.Engine.Prefs	DEBUG	Engine constructed
+1598510487408	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1598510487412	Sync.Engine.Tabs	DEBUG	Engine constructed
+1598510487413	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1598510487413	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1598510487416	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1598510487417	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1598510487424	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1598510487427	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1598510487427	Sync.Service	INFO	Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:66.0) Gecko/20100101 Firefox/66.0
+1598510487453	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1598510487454	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1598510487454	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1598510487457	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1598510487457	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1598510487457	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1598510722125	addons.xpi	WARN	System add-on baidu-code-update@mozillaonline.com isn't compatible with the application.
+1598514616464	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1598514616465	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598514616474	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598514617438	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598521047930	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1598521054034	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1598521054034	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1598521054037	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598521054040	Sync.Service	DEBUG	User-Agent: Firefox/66.0.3 (Linux i686) FxSync/1.68.0.20190410112326.desktop
+1598521054041	Sync.Service	INFO	Starting sync at 2020-08-27 05:37:34 in browser session PuGNtMEH2ibx
+1598521054042	Sync.Service	DEBUG	In sync: should login.
+1598521054044	Sync.Service	INFO	User logged in successfully - verifying login.
+1598521054045	Sync.BrowserIDManager	DEBUG	unlockAndVerifyAuthState has no user
+1598521054045	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1598521054045	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1598521054045	Sync.Service	DEBUG	Fetching unlocked auth state returned error.login.reason.no_username
+1598521054046	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1598521054047	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598521054047	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598521054048	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: error.login.reason.no_username(resource://services-sync/service.js:872:15) JS Stack trace: onNotify@service.js:872:15
+1598521054049	Sync.Service	DEBUG	Not syncing: login returned false.

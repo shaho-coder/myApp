@@ -1,0 +1,8 @@
+
+(unity-control-center:8202): sound-cc-panel-WARNING **: Unable to find stream for bar '(null)'
+
+(unity-control-center:8202): sound-cc-panel-WARNING **: active_output_update - couldn't find a stream from the supposed active output
+
+(unity-control-center:8202): sound-cc-panel-WARNING **: active_input_update - couldn't find a stream from the supposed active input
+
+(unity-control-center:8202): sound-cc-panel-WARNING **: pa_stream_disconnect failed, res = -15
